@@ -1,14 +1,15 @@
-# Shelby Testnet Updates
+# Troubleshooting Shelby Node
 
-## Testnet Launch
-- Date: TBD
-- Purpose: Validate node setup and commands
+## Common Errors & Solutions
 
-## Known Issues
-- Node sync may take longer for first blocks
-- Logs may show warnings (normal during testnet)
+### Node fails to start
+- Check dependencies and free disk space
 
-## Upcoming Features
-- Validator rewards
-- CLI improvements
-- Snapshot sync support
+### Node stuck syncing
+- Restart node with `./shelby restart` and check logs
+
+### Logs not showing
+- Ensure proper permissions and run `./shelby logs -f`
+
+### Connection errors
+- Verify firewall / port configuration and network
